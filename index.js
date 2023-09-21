@@ -1,6 +1,6 @@
 const main = document.querySelector('main');
 const blogList = document.querySelector('.blog-list');
-const addBlogBtn = document.querySelector('.add-blog');
+const addBlogBtns = document.querySelectorAll('.add-blog');
 const blogForm = document.querySelector('.form-container');
 const searchForm = document.querySelector('.search-form');
 
@@ -187,9 +187,12 @@ addCategoryAndTags(blogData)
 
 function addBlog(){
     const closeBtn = document.querySelector('.close-add-blog')
-    addBlogBtn.addEventListener('click', () => {
-    blogForm.style.display = 'block';     
+    addBlogBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            blogForm.style.display = 'block';     
+            })
     })
+    
 
     closeBtn.addEventListener('click', () => {
         blogForm.style.display = 'none';     
