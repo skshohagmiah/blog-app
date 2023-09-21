@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Your Blog App</title>
+  </head>
+  <body>
+    <header class="blog-header">
+      <div class="logo">
+        <h1><a href="/">YBlog</a></h1>
+      </div>
+      <div class="mobile-add-btn">
+        <button class="add-blog">Add Blog</button>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li class="desktop-add-btn">
+            <button class="add-blog">Add Blog</button>
+          </li>
+          <li><img class="profile-image" src="" alt="" /></li>
+        </ul>
+      </nav>
+      <div class="hambergur">
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
+    </header>
+    <div class="login-container">
+      <h1>Login</h1>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="profile-image">Profile Image:</label>
+        <input type="file" id="profile-image" name="profile-image" />
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <div class="form-container">
+      <button class="close-add-blog">Close</button>
+      <h1>Add a New Blog Post</h1>
+      <form
+        action="#"
+        method="post"
+        class="add-blog-form"
+        enctype="multipart/form-data"
+      >
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required />
+
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" rows="6" required></textarea>
+
+        <label for="tags">Tags:</label>
+        <input
+          type="text"
+          id="tags"
+          name="tags"
+          placeholder="Comma-separated, e.g., SQL, Databases"
+        />
+
+        <label for="imageUrl">Image URL:</label>
+        <input type="text" id="imageUrl" name="imageUrl" />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="edit-container">
+      <button class="close-update-blog">Close</button>
+      <h1>Edit A Post</h1>
+      <form
+        action="#"
+        method="post"
+        class="update-form"
+        enctype="multipart/form-data"
+      >
+        <label for="title">Title:</label>
+        <input type="text" id="etitle" name="title" required />
+
+        <label for="author">Author:</label>
+        <input type="text" id="eauthor" name="author" required />
+
+        <label for="content">Content:</label>
+        <textarea id="econtent" name="content" rows="6" required></textarea>
+
+        <label for="tags">Tags:</label>
+        <input
+          type="text"
+          id="etags"
+          name="tags"
+          placeholder="Comma-separated, e.g., SQL, Databases"
+        />
+
+        <label for="imageUrl">Image URL:</label>
+        <input type="text" id="eimageUrl" name="imageUrl" />
+
+        <button type="submit">Update</button>
+      </form>
+    </div>
+    <div class="read-more-container"></div>
+    <!-- Rest of your blog content goes here -->
+    <main class="blog-content">
+      <section class="blog-sidebar">
+        <!-- Sidebar for categories, search, and tags -->
+        <div class="search">
+          <h3>Search</h3>
+          <form action="#" class="search-form">
+            <input type="text" class="search-input" placeholder="Search..." />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+
+        <div class="categories">
+          <h3>Categories</h3>
+          <ul class="all-categories">
+            <!-- Add more categories as needed -->
+          </ul>
+        </div>
+
+        <div class="tags">
+          <h3>Tags</h3>
+          <ul class="all-tags">
+            <!-- Add more tags as needed -->
+          </ul>
+        </div>
+      </section>
+
+      <section class="blog-list">
+        <!-- Blog post items will be displayed here -->
+
+        <!-- Repeat the above article structure for each blog post -->
+      </section>
+    </main>
+    <footer class="blog-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h1>YBlog</h1>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Your Blog. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
